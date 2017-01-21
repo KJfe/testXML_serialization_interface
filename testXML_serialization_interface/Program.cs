@@ -11,6 +11,9 @@ namespace testXML_serialization_interface
 {  
     class Program
     {
+        /// <summary>
+        /// Лист данных
+        /// </summary>
         public List<IVolumeFigure> ListFigureParametrs = new List<IVolumeFigure>(); 
 
 
@@ -41,6 +44,7 @@ namespace testXML_serialization_interface
             var deserializedOrder = (ListFigure)xmlSerializer.Deserialize(xmlReader);
 
             //ListFigureParametrs.Add( xmlReader);
+            
 
             Console.ReadLine();
         }
