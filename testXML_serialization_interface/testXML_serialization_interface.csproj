@@ -43,8 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Box.cs" />
+    <Compile Include="IFigure.cs" />
+    <Compile Include="ListFigure.cs" />
+    <Compile Include="ListOfIDispatcher.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pyramid.cs" />
+    <Compile Include="Sphear.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
