@@ -13,7 +13,6 @@ namespace testXML_serialization_interface
         public double Height;
         public double Width;
         public double Deep;
-        
 
         public double Volume
         {

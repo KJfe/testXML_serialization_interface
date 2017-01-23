@@ -40,11 +40,13 @@ namespace testXML_serialization_interface
 
             //deserialize
             xmlSerializer = new XmlSerializer(typeof(ListFigure));
-            var xmlReader = XmlReader.Create(new StringReader("E:\\vol.xml"));
+            var xmlReader = XmlReader.Create("E:\\vol.xml");
             var deserializedOrder = (ListFigure)xmlSerializer.Deserialize(xmlReader);
-
-            //ListFigureParametrs.Add( xmlReader);
             
+            //возможность запихивать результат в лист
+            list.VolumeFigure.Add(deserializedOrder.VolumeFigure[0]);
+            List<IVolumeFigure> ListFigureParametrs2 = new List<IVolumeFigure>();
+            ListFigureParametrs2.Add(deserializedOrder.VolumeFigure[0]);
 
             Console.ReadLine();
         }

@@ -22,7 +22,6 @@ namespace testXML_serialization_interface
             {
                 Type type = Type.GetType(reader.GetAttribute("AssemblyQualifiedName"));
                 XmlSerializer serial = new XmlSerializer(type);
-
                 reader.ReadStartElement("IVolumeFigure");
                 this.Add((IVolumeFigure)serial.Deserialize(reader));
                 reader.ReadEndElement();
